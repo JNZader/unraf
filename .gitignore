@@ -2,3 +2,7 @@
 *.mkv
 *.mov
 *.avi
+
+# Estudio build outputs
+DIATO/estudio/build/
+**/__pycache__/
