@@ -12,64 +12,48 @@ El recorrido va de fundamentos (qué es la IA, big data, ML) a prácticas de uso
 
 ### Bloque A — Fundamentos
 
-| # | Capítulo | Tema |
-|---|----------|------|
-| 00 | [Introducción a la diplomatura](00-introduccion-diplomatura.md) | Overview de la cohorte 5, contexto institucional, glosario inicial, mapa de módulos |
-| 01 | [¿Qué es la Inteligencia Artificial?](01-que-es-la-ia.md) | Definiciones, agentes, IA débil vs general, tipos de aprendizaje, breve historia |
-| 02 | [Big Data y las 5 V](02-big-data-y-5v.md) | Volumen, velocidad, variedad, veracidad, valor — y por qué la 6ª V (variabilidad) importa en agro/industria |
-| 03 | [Machine Learning: Fundamentos](03-machine-learning-fundamentos.md) | Supervisado / no supervisado / refuerzo, pipeline, sobreajuste, métricas, casos organizacionales |
+- **00** [Introducción a la diplomatura](00-introduccion-diplomatura.md) — Overview de la cohorte 5, contexto institucional, glosario inicial, mapa de módulos
+- **01** [¿Qué es la Inteligencia Artificial?](01-que-es-la-ia.md) — Definiciones, agentes, IA débil vs general, tipos de aprendizaje, breve historia
+- **02** [Big Data y las 5 V](02-big-data-y-5v.md) — Volumen, velocidad, variedad, veracidad, valor — y por qué la 6ª V (variabilidad) importa en agro/industria
+- **03** [Machine Learning: Fundamentos](03-machine-learning-fundamentos.md) — Supervisado / no supervisado / refuerzo, pipeline, sobreajuste, métricas, casos organizacionales
 
 ### Bloque B — IA Generativa práctica
 
-| # | Capítulo | Tema |
-|---|----------|------|
-| 04 | [Ingeniería de prompts](04-prompt-engineering.md) | Framework ROCEF, fallas típicas, autopreguntas, ejemplos por área (RRHH, ventas, operaciones) |
-| 05 | [IA Generativa y modelo 4E](05-ia-generativa-y-modelo-4e.md) | Explorar / Evaluar / Ejecutar / Escalar — cómo adoptar IAG sin romper la organización |
+- **04** [Ingeniería de prompts](04-prompt-engineering.md) — Framework ROCEF, fallas típicas, autopreguntas, ejemplos por área (RRHH, ventas, operaciones)
+- **05** [IA Generativa y modelo 4E](05-ia-generativa-y-modelo-4e.md) — Explorar / Evaluar / Ejecutar / Escalar — cómo adoptar IAG sin romper la organización
 
 ### Bloque C — Estrategia y procesos
 
-| # | Capítulo | Tema |
-|---|----------|------|
-| 06 | [IA en la estrategia organizacional](06-ia-en-estrategia-organizacional.md) | De la IA como herramienta a la IA como capacidad estratégica, modelos de adopción, casos |
-| 07 | [Gestión por procesos](07-gestion-por-procesos.md) | BPM, mapeo, indicadores, oportunidades de automatización con IA, minería de procesos |
+- **06** [IA en la estrategia organizacional](06-ia-en-estrategia-organizacional.md) — De la IA como herramienta a la IA como capacidad estratégica, modelos de adopción, casos
+- **07** [Gestión por procesos](07-gestion-por-procesos.md) — BPM, mapeo, indicadores, oportunidades de automatización con IA, minería de procesos
 
 ### Bloque D — Arquitectura y automatización
 
-| # | Capítulo | Tema |
-|---|----------|------|
-| 08 | [Arquitectura tecnológica organizacional](08-arquitectura-tecnologica-organizacional.md) | Stack tecnológico, capas, integración, decisiones build vs buy, deuda técnica |
-| 09 | [Automatización integral](09-automatizacion-integral.md) | RPA, iPaaS, agentes IA, criterios de selección, ROI, casos reales |
+- **08** [Arquitectura tecnológica organizacional](08-arquitectura-tecnologica-organizacional.md) — Stack tecnológico, capas, integración, decisiones build vs buy, deuda técnica
+- **09** [Automatización integral](09-automatizacion-integral.md) — RPA, iPaaS, agentes IA, criterios de selección, ROI, casos reales
 
 ### Bloque E — Datos como activo estratégico
 
-| # | Capítulo | Tema |
-|---|----------|------|
-| 10 | [Gestión estratégica de datos](10-gestion-estrategica-datos.md) | Data governance, calidad, ciclo de vida, roles (CDO, data steward), data mesh |
+- **10** [Gestión estratégica de datos](10-gestion-estrategica-datos.md) — Data governance, calidad, ciclo de vida, roles (CDO, data steward), data mesh
 
 ### Bloque F — Gobernanza, ética y marco legal
 
-| # | Capítulo | Tema |
-|---|----------|------|
-| 11 | [Ética, privacidad y marco legal argentino para IA](11-etica-privacidad-marco-legal-ar.md) | Ley 25.326, AAIP, EU AI Act, sesgos, transparencia, accountability |
+- **11** [Ética, privacidad y marco legal argentino para IA](11-etica-privacidad-marco-legal-ar.md) — Ley 25.326, AAIP, EU AI Act, sesgos, transparencia, accountability
 
 ### Bloque G — Inteligencia competitiva y tendencias
 
-| # | Capítulo | Tema |
-|---|----------|------|
-| 12 | [Análisis competitivo con IA](12-analisis-competitivo-con-ia.md) | Inteligencia competitiva potenciada por IA, herramientas, casos, framework de uso |
-| 13 | [Tendencias tecnológicas — Deloitte Tech Trends 2026](13-tendencias-deloitte-2026.md) | Síntesis ejecutiva del reporte, qué importa para una organización argentina |
-| 14 | [El Estado de las Organizaciones 2026 — McKinsey](14-estado-organizaciones-mckinsey-2026.md) | Las 10 tendencias organizacionales, lectura crítica para PyMEs y grandes empresas AR |
+- **12** [Análisis competitivo con IA](12-analisis-competitivo-con-ia.md) — Inteligencia competitiva potenciada por IA, herramientas, casos, framework de uso
+- **13** [Tendencias tecnológicas — Deloitte Tech Trends 2026](13-tendencias-deloitte-2026.md) — Síntesis ejecutiva del reporte, qué importa para una organización argentina
+- **14** [El Estado de las Organizaciones 2026 — McKinsey](14-estado-organizaciones-mckinsey-2026.md) — Las 10 tendencias organizacionales, lectura crítica para PyMEs y grandes empresas AR
 
 ### Bloque H — Material de consulta y entregables
 
-| # | Capítulo | Tema |
-|---|----------|------|
-| 15 | [Glosario temático](15-glosario.md) | 12 grupos temáticos, ~250 términos con definición y capítulo de referencia |
-| 16 | [Cheatsheet de frameworks DIATO](16-frameworks-cheatsheet.md) | Todos los marcos del curso (4E, ROCEF, 5V, BPM, etc.) en un solo lugar |
-| 17 | [Preguntas guía para auto-examen](17-preguntas-guia.md) | ~140 preguntas sobre caps 00-14, sin respuestas (las tenés que defender vos) |
-| 18 | [Bibliografía y recursos: guía de USO](18-bibliografia-recursos.md) | No es un listado pasivo: qué cubre cada libro/reporte, para qué capítulo sirve, nivel |
-| 19 | [Guía paso a paso del TPI](19-guia-tpi.md) | Trabajo Práctico Integrador grupal, los 8 bloques obligatorios, rúbrica, fechas |
-| 20 | [Apoyo al Trabajo Final IA-TO V2 (Caso Plantium)](20-apoyo-trabajo-final-iato.md) | Sección por sección, qué falta, qué chequear, decisiones técnicas pendientes |
+- **15** [Glosario temático](15-glosario.md) — 12 grupos temáticos, ~250 términos con definición y capítulo de referencia
+- **16** [Cheatsheet de frameworks DIATO](16-frameworks-cheatsheet.md) — Todos los marcos del curso (4E, ROCEF, 5V, BPM, etc.) en un solo lugar
+- **17** [Preguntas guía para auto-examen](17-preguntas-guia.md) — ~140 preguntas sobre caps 00-14, sin respuestas (las tenés que defender vos)
+- **18** [Bibliografía y recursos: guía de USO](18-bibliografia-recursos.md) — No es un listado pasivo: qué cubre cada libro/reporte, para qué capítulo sirve, nivel
+- **19** [Guía paso a paso del TPI](19-guia-tpi.md) — Trabajo Práctico Integrador grupal, los 8 bloques obligatorios, rúbrica, fechas
+- **20** [Apoyo al Trabajo Final IA-TO V2 (Caso Plantium)](20-apoyo-trabajo-final-iato.md) — Sección por sección, qué falta, qué chequear, decisiones técnicas pendientes
 
 ## Mapa Módulos → Capítulos
 

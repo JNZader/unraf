@@ -361,6 +361,7 @@ figcaption { color: var(--muted); font-size: 0.95rem; margin-top: 0.55rem; }
 table {
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
   margin: 1rem 0;
   font-size: 0.95rem;
 }
@@ -368,12 +369,22 @@ th, td {
   border: 1px solid var(--border);
   padding: 10px 12px;
   text-align: left;
+  vertical-align: top;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 th {
   background: #f1f5f9;
   font-weight: 600;
 }
 tr:nth-child(even) { background: #f8fafc; }
+.fnref a { text-decoration: none; padding: 0 2px; font-weight: 600; }
+.footnotes { margin-top: 32px; font-size: 0.9rem; color: var(--muted); }
+.footnotes hr { border: 0; border-top: 1px solid var(--border); margin: 16px 0; }
+.footnotes ol { padding-left: 24px; }
+.footnotes li { margin: 6px 0; }
+.fn-back { text-decoration: none; margin-left: 6px; opacity: 0.7; }
+.fn-back:hover { opacity: 1; }
 @media (max-width: 900px) {
   .layout { grid-template-columns: 1fr; }
   .sidebar { position: relative; height: auto; }
@@ -405,6 +416,12 @@ def inline_format(text: str) -> str:
     text = html.escape(text)
     text = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', text)
     text = re.sub(r'`([^`]+)`', r'<code>\1</code>', text)
+    # Footnote reference [^N] → <sup><a href="#fn-N" id="fnref-N">N</a></sup>
+    text = re.sub(
+        r'\[\^(\w+)\]',
+        lambda m: f'<sup class="fnref"><a href="#fn-{m.group(1)}" id="fnref-{m.group(1)}">{m.group(1)}</a></sup>',
+        text,
+    )
     text = re.sub(
         r'\[(.*?)\]\((.*?)\)',
         lambda m: f'<a href="{page_target(m.group(2))}">{m.group(1)}</a>',
@@ -443,6 +460,24 @@ def box_kind(title: str) -> str | None:
 
 
 def md_to_html(md: str, source_dir: Path) -> str:
+    # Pre-procesamiento: extraer definiciones de footnotes `[^N]: texto`
+    # y removerlas del flujo principal.
+    footnote_defs: dict[str, str] = {}
+    cleaned_lines: list[str] = []
+    fn_def_pattern = re.compile(r'^\[\^(\w+)\]:\s*(.*)$')
+    current_fn_key: str | None = None
+    for raw_line in md.splitlines():
+        m = fn_def_pattern.match(raw_line)
+        if m:
+            current_fn_key = m.group(1)
+            footnote_defs[current_fn_key] = m.group(2)
+            continue
+        if current_fn_key and raw_line.startswith('    '):
+            footnote_defs[current_fn_key] += '\n' + raw_line.strip()
+            continue
+        current_fn_key = None
+        cleaned_lines.append(raw_line)
+    md = '\n'.join(cleaned_lines)
     lines = md.splitlines()
     out = []
     in_code = False
@@ -531,12 +566,14 @@ def md_to_html(md: str, source_dir: Path) -> str:
             out.append(image_html)
             continue
 
-        if stripped.startswith('> '):
+        if stripped.startswith('> ') or stripped == '>':
             close_lists()
             if not in_blockquote:
                 out.append('<blockquote>')
                 in_blockquote = True
-            out.append(f'<p>{inline_format(stripped[2:])}</p>')
+            # Línea ">" sola actúa como separador de párrafos DENTRO del blockquote
+            if stripped != '>':
+                out.append(f'<p>{inline_format(stripped[2:])}</p>')
             continue
         elif in_blockquote:
             out.append('</blockquote>')
@@ -623,6 +660,15 @@ def md_to_html(md: str, source_dir: Path) -> str:
         md_to_html._in_table = False
         md_to_html._table_header = []
         md_to_html._table_rows = []
+    # Renderizar footnotes al final si hay
+    if footnote_defs:
+        out.append('<aside class="footnotes"><hr><ol>')
+        for key, text in footnote_defs.items():
+            out.append(
+                f'<li id="fn-{key}">{inline_format(text)} '
+                f'<a href="#fnref-{key}" class="fn-back" aria-label="Volver">↩</a></li>'
+            )
+        out.append('</ol></aside>')
     return '\n'.join(out)
 
 
