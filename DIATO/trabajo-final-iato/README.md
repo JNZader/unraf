@@ -4,7 +4,19 @@
 >
 > **Responsable**: Javier Zader.
 
-## Evolución del documento
+## Versiones para el cuerpo del trabajo grupal
+
+La **v3** (más abajo) es el desarrollo COMPLETO (~21 páginas) y funciona como **anexo de respaldo**. Para integrar al documento grupal entregable se prepararon **tres versiones condensadas del cuerpo**, con exactamente los mismos números (CAPEX 50.000, OPEX 2.308, ROI 137,6%) y distinta profundidad. El grupo elige cuál usar según el espacio disponible:
+
+| Versión | Extensión | Cuándo usarla |
+|---|---|---|
+| [Breve](seccion-6-cuerpo-1-breve.md) | ~0,8 pág (388 pal) | Cuerpo del trabajo muy apretado |
+| [Media](seccion-6-cuerpo-2-media.md) ⭐ | ~2,3 pág (1.151 pal) | Equilibrio recomendado |
+| [Generosa](seccion-6-cuerpo-3-generosa.md) | ~3,7 pág (1.842 pal) | Si la cátedra valora profundidad |
+
+Las tres remiten al **Anexo 6** (la v3 completa) para matrices de scoring, análisis fiscal argentino, sensibilidad por volumen y cumplimiento de la Ley 25.326.
+
+## Evolución del documento (historial de iteraciones)
 
 La sección pasó por tres iteraciones con multi-voice review (Sonnet + Codex CLI + Opus + Codex gpt-5.5) entre cada versión.
 
@@ -85,10 +97,14 @@ Aplica los 5 fixes críticos detectados en v2 + reestructura el documento en cue
 
 ## Próximos pasos
 
-- Coordinar con **Magdalena (Sec 8)** la reconciliación del ROI (137,6% sobre CAPEX vs 44,3% con carga AR)
-- Coordinar con **Nadia (Sec 5)** que la arquitectura del stack coincida con lo cerrado en el Anexo A
-- Validar con **Lourdes (Sec 1)**: ¿Plantium tiene Microsoft 365? ¿CRM cloud-native o legacy?
-- Coordinar con **Santiago (Sec 7)**: el cronograma debe absorber CAPEX en 3-6 meses, no día 1
+**Estado de coordinación** (verificado contra el docx grupal actualizado, 27-may-2026):
+
+- ✅ **Magdalena (Sec 8)** — ALINEADA. Su ROI ahora cierra: 216.000 (AS IS) / 118.800 (ahorro) / 50.000 (inversión) / **137,6%** / payback 5-6 meses. Misma convención (ROI sobre CAPEX). El problema previo (137,6% declarado vs 237% calculado) quedó resuelto.
+- ⚠️ **Nadia (Sec 5)** — CHOQUE de stack: su arquitectura propone "Botpress o Dialogflow CX", pero esta sección cierra en **Botmaker** (ancla del argumento de presencia local AR). Coordinar: o suma Botmaker como opción, o se justifica el cierre sobre lo que ella planteó. También menciona "Claude 3.5 Sonnet" (versión vieja) vs el mix GPT-4o de esta sección.
+- 🟢 **Santiago (Sec 7)** — ya desarrollado: cronograma de 24 semanas / 6 meses, 6 fases. Validar que las fases absorban el CAPEX de forma gradual (3-6 meses), no día 1.
+- 🔲 **Lourdes (Sec 1)** — validar: ¿Plantium tiene Microsoft 365? ¿CRM cloud-native o legacy?
+- 🔲 **Integrar al docx grupal** — hoy el docx solo tiene un link al sitio + nota "tengo que resumir". Falta pegar la versión de cuerpo que el grupo elija.
+- 🔲 **Fixes finos de la v3** (pasada final, cuando se elija versión): 3 vs 5 supervisores (capacitación vs licencias Power BI); Power BI clasificado extranjero 1,5× vs "factura local con IVA" (~1,21×); supuesto 4 "generación simple ~600 tokens" vs cálculo A.3 (3.000 input); embeddings "~1" → 0,13; Grafana en OPEX pero no en stack 6.4; "ocho componentes" vs 9 filas en 6.4.
 
 ## Material de referencia
 
