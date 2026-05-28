@@ -7,3 +7,6 @@
 **/build/
 _site/
 **/__pycache__/
+
+# Transcripciones de audios privados (material de terceros — NO publicar)
+**/transcripcion-audio-*.txt

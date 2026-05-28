@@ -2,42 +2,42 @@
 
 **Responsable: Javier Zader**
 
-> **Versión BREVE (~1 página)** — solo lo esencial para el cuerpo del trabajo. Todo el detalle (criterios ponderados, matrices de scoring, desglose CAPEX, fiscal argentino, sensibilidad y Ley 25.326) vive en el **Anexo 6** ([versión completa publicada](https://jnzader.github.io/unraf/trabajo-final-iato/seccion-6-v3-fix2-final.html)).
+Sobre la base de la arquitectura definida en la Sección 5 y los volúmenes establecidos en la Sección 8 (aproximadamente 6.000 conversaciones mensuales, costo operativo anual actual de USD 216.000 y meta de automatización del 70%), se propone el siguiente stack tecnológico, evaluado mediante siete criterios ponderados que priorizan la capacidad de integración y la presencia local.
 
-Sobre la arquitectura de la Sección 5 y los volúmenes de la Sección 8 (≈6.000 conversaciones/mes, costo actual USD 216.000/año, meta de automatización del 70%), se propone el siguiente stack, evaluado con siete criterios ponderados que priorizan integración y presencia local.
+## 6.1 Stack tecnológico recomendado
 
-## Stack tecnológico recomendado
-
-| Componente | Proveedor | Por qué |
+| Componente | Proveedor | Fundamento |
 |---|---|---|
-| Canal WhatsApp | **Twilio (vía Botmaker)** | BSP oficial, sin doble factura. |
-| Plataforma de bot | **Botmaker** | Argentina, facturación local, soporte en español. |
-| Motor LLM | **OpenAI GPT-4o-mini + GPT-4o (mix 80/20)** | Mejor calidad/precio del mercado. |
-| Vector DB (RAG) | **Pinecone Serverless** | Free tier para piloto, escalable sin operar infra. |
-| Automatización | **Make.com (Business)** | Mejor balance precio/capacidad. |
-| Copiloto interno | **OpenAI Assistants + CRM** | Aprovecha la inversión OpenAI. |
-| Hosting / Analítica | **DigitalOcean / Power BI Pro** | Pricing predecible; Power BI factura local con IVA. |
+| Canal WhatsApp | **Twilio (vía Botmaker)** | Proveedor oficial (BSP), sin doble facturación. |
+| Plataforma de bot | **Botmaker** | Empresa argentina, facturación local y soporte en español. |
+| Motor LLM | **OpenAI GPT-4o-mini + GPT-4o (combinación 80/20)** | Mejor relación calidad/precio del mercado. |
+| Base vectorial (RAG) | **Pinecone Serverless** | Capa gratuita para el piloto, escalable sin administrar infraestructura. |
+| Automatización | **Make.com (plan Business)** | Mejor relación entre precio y capacidad. |
+| Copiloto interno | **OpenAI Assistants + CRM** | Aprovecha la inversión en OpenAI. |
+| Hosting / Analítica | **DigitalOcean / Power BI Pro** | Precios predecibles; Power BI factura localmente con IVA. |
 
-## Inversión estimada
+## 6.2 Inversión estimada
 
 | Concepto | Valor |
 |---|---:|
-| **CAPEX** (inversión inicial, alineado con Sección 8) | **USD 50.000** |
-| **OPEX** (recurrente) | **USD 2.308/mes** (USD 27.696/año) |
-| **TCO a 3 años** | **USD 124.928** |
+| **CAPEX** (inversión inicial, en línea con la Sección 8) | **USD 50.000** |
+| **OPEX** (costo recurrente) | **USD 2.308/mes** (USD 27.696/año) |
+| **Costo total de propiedad a 3 años** | **USD 124.928** |
 
-## Retorno de la inversión
+## 6.3 Retorno de la inversión
 
-Con 70% de automatización, el ahorro estimado es de **USD 118.800/año** (55% del costo actual).
+Con una tasa de automatización del 70%, el ahorro estimado asciende a **USD 118.800 anuales** (55% del costo actual).
 
 | Métrica | Valor |
 |---|---:|
-| ROI sobre CAPEX (alineado con Sección 8) | **137,6%** |
-| ROI sobre inversión total año 1 | 52,9% |
-| Payback (bruto / neto) | 5,05 / 6,59 meses |
+| ROI sobre CAPEX (en línea con la Sección 8) | **137,6%** |
+| ROI sobre inversión total del primer año | 52,9% |
+| Período de recuperación (bruto / neto) | 5,05 / 6,59 meses |
 
-Las métricas son complementarias: el 137,6% es la convención clásica sobre CAPEX (Sección 8); las demás incorporan el OPEX. El proyecto libera **6,3 FTE de capacidad** del equipo técnico para tareas de mayor valor.
+Las cinco métricas son consistentes entre sí y miden dimensiones distintas del retorno: el 137,6% corresponde a la convención clásica sobre CAPEX (Sección 8), mientras que las demás incorporan el costo operativo. El proyecto libera 6,3 puestos de trabajo equivalentes (FTE) de capacidad del equipo técnico para tareas de mayor valor agregado.
 
-## Conclusión
+## 6.4 Conclusión
 
-El stack prioriza presencia local (Botmaker), pricing transparente (OpenAI, Pinecone, DigitalOcean) y cumplimiento de la Ley 25.326. Permite iniciar con bajo riesgo financiero, escalar sin re-arquitectura y convertir el conocimiento de la empresa en un activo reutilizable, con una inversión adecuada a la escala de una PyME industrial.
+El stack propuesto prioriza la presencia local (Botmaker), la transparencia de precios (OpenAI, Pinecone, DigitalOcean) y el cumplimiento de la Ley 25.326 de Protección de Datos Personales. Permite iniciar el proyecto con bajo riesgo financiero, escalar la operación sin rediseñar la arquitectura y transformar el conocimiento de la organización en un activo reutilizable, con una inversión proporcional a la escala de una PyME industrial.
+
+> El análisis comparativo detallado por componente (matrices de evaluación), el desglose completo del CAPEX y el OPEX, el impacto fiscal argentino, el análisis de sensibilidad por volumen y el cumplimiento de la Ley 25.326 se desarrollan en los Anexos 6.A, 6.B y 6.C.
