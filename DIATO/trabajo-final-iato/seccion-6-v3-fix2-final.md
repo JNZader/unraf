@@ -320,12 +320,12 @@ Ganador: **Twilio operado a través de Botmaker** — combina la robustez técni
 
 | Alternativa | Pres. AR (15%) | Madurez (15%) | Precios (10%) | Integración (20%) | Cumplimiento (15%) | Escala (10%) | TCO (15%) | Puntuación |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---:|
-| Botmaker | 5 | 5 | 4 | 5 | 4 | 4 | 4 | **4,45** |
-| Aivo | 5 | 5 | 2 | 4 | 4 | 5 | 2 | **3,80** |
+| Botmaker | 5 | 5 | 4 | 5 | 4 | 4 | 4 | **4,50** |
+| Aivo | 5 | 5 | 2 | 4 | 4 | 5 | 2 | **3,90** |
 | Voiceflow | 2 | 4 | 3 | 4 | 3 | 4 | 3 | **3,30** |
 | A medida n8n | 3 | 3 | 5 | 4 | 4 | 4 | 5 | **3,95** |
 
-Cálculo Botmaker: 5×0,15 + 5×0,15 + 4×0,10 + 5×0,20 + 4×0,15 + 4×0,10 + 4×0,15 = 0,75 + 0,75 + 0,40 + 1,00 + 0,60 + 0,40 + 0,60 = **4,50** (redondeo presentado 4,45).
+Cálculo Botmaker: 5×0,15 + 5×0,15 + 4×0,10 + 5×0,20 + 4×0,15 + 4×0,10 + 4×0,15 = 0,75 + 0,75 + 0,40 + 1,00 + 0,60 + 0,40 + 0,60 = **4,50**.
 
 Ganador: **Botmaker** — único proveedor que combina presencia local, madurez probada e integración WhatsApp BSP nativa.
 
@@ -360,14 +360,14 @@ El cálculo base da **USD 16/mes**. Para el presupuesto OPEX se adopta un **tech
 
 | Alternativa | Pres. AR (15%) | Madurez (15%) | Precios (10%) | Integración (20%) | Cumplimiento (15%) | Escala (10%) | TCO (15%) | Puntuación |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---:|
-| OpenAI GPT-4o + 4o-mini (combinación) | 2 | 5 | 5 | 5 | 4 | 5 | 5 | **4,35** |
-| Anthropic Claude Sonnet 4.6 + Haiku | 2 | 5 | 3 | 4 | 5 | 5 | 3 | **3,80** |
-| Azure OpenAI | 2 | 5 | 3 | 5 | 5 | 5 | 3 | **3,95** |
+| OpenAI GPT-4o + 4o-mini (combinación) | 2 | 5 | 5 | 5 | 4 | 5 | 5 | **4,40** |
+| Anthropic Claude Sonnet 4.6 + Haiku | 2 | 5 | 3 | 4 | 5 | 5 | 3 | **3,85** |
+| Azure OpenAI | 2 | 5 | 3 | 5 | 5 | 5 | 3 | **4,05** |
 | Google Vertex AI (Gemini) | 3 | 4 | 4 | 4 | 4 | 5 | 4 | **3,95** |
-| AWS Bedrock multi-LLM | 2 | 4 | 4 | 4 | 4 | 5 | 4 | **3,70** |
+| AWS Bedrock multi-LLM | 2 | 4 | 4 | 4 | 4 | 5 | 4 | **3,80** |
 | Local open-source (Llama 3 con alojamiento propio) | 3 | 3 | 5 | 3 | 5 | 3 | 4 | **3,65** |
 
-Cálculo OpenAI: 2×0,15 + 5×0,15 + 5×0,10 + 5×0,20 + 4×0,15 + 5×0,10 + 5×0,15 = 0,30 + 0,75 + 0,50 + 1,00 + 0,60 + 0,50 + 0,75 = **4,40** (redondeo presentado 4,35).
+Cálculo OpenAI: 2×0,15 + 5×0,15 + 5×0,10 + 5×0,20 + 4×0,15 + 5×0,10 + 5×0,15 = 0,30 + 0,75 + 0,50 + 1,00 + 0,60 + 0,50 + 0,75 = **4,40**.
 
 Ganador: **OpenAI GPT-4o + 4o-mini con combinación 80/20** — mejor relación calidad/precio del mercado y SDK más maduro.
 
@@ -397,12 +397,12 @@ Se recomienda **OpenAI text-embedding-3-small** por costo, calidad en español y
 
 | Alternativa | Pres. AR (15%) | Madurez (15%) | Precios (10%) | Integración (20%) | Cumplimiento (15%) | Escala (10%) | TCO (15%) | Puntuación |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---:|
-| Pinecone Serverless | 2 | 5 | 5 | 5 | 3 | 5 | 4 | **4,05** |
+| Pinecone Serverless | 2 | 5 | 5 | 5 | 3 | 5 | 4 | **4,10** |
 | Qdrant Cloud | 3 | 4 | 4 | 4 | 4 | 4 | 4 | **3,85** |
 | Weaviate Cloud | 2 | 4 | 3 | 4 | 4 | 4 | 3 | **3,45** |
 | pgvector (PostgreSQL) | 4 | 4 | 5 | 4 | 5 | 3 | 5 | **4,30** |
 
-Cálculo Pinecone: 2×0,15 + 5×0,15 + 5×0,10 + 5×0,20 + 3×0,15 + 5×0,10 + 4×0,15 = 0,30 + 0,75 + 0,50 + 1,00 + 0,45 + 0,50 + 0,60 = **4,10** (redondeo presentado 4,05).
+Cálculo Pinecone: 2×0,15 + 5×0,15 + 5×0,10 + 5×0,20 + 3×0,15 + 5×0,10 + 4×0,15 = 0,30 + 0,75 + 0,50 + 1,00 + 0,45 + 0,50 + 0,60 = **4,10**.
 Cálculo pgvector: 4×0,15 + 4×0,15 + 5×0,10 + 4×0,20 + 5×0,15 + 3×0,10 + 5×0,15 = 0,60 + 0,60 + 0,50 + 0,80 + 0,75 + 0,30 + 0,75 = **4,30**.
 
 Aunque pgvector obtiene mayor puntuación por TCO y cumplimiento, se elige **Pinecone Serverless** por su capa gratuita inicial sin costo, escalabilidad superior bajo demanda y eliminación de la operación de infraestructura, factores críticos para una PyME en fase piloto. pgvector queda como plan B documentado para Fase 3 si los volúmenes crecen y se quiere consolidar el stack sobre Postgres.
@@ -421,12 +421,12 @@ Aunque pgvector obtiene mayor puntuación por TCO y cumplimiento, se elige **Pin
 | Alternativa | Pres. AR (15%) | Madurez (15%) | Precios (10%) | Integración (20%) | Cumplimiento (15%) | Escala (10%) | TCO (15%) | Puntuación |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---:|
 | Make.com | 3 | 4 | 5 | 5 | 4 | 4 | 4 | **4,15** |
-| Zapier | 3 | 5 | 3 | 5 | 4 | 4 | 3 | **3,90** |
-| n8n con alojamiento propio | 3 | 4 | 5 | 4 | 4 | 4 | 5 | **4,15** |
-| n8n Cloud | 3 | 4 | 4 | 4 | 4 | 4 | 4 | **3,90** |
+| Zapier | 3 | 5 | 3 | 5 | 4 | 4 | 3 | **3,95** |
+| n8n con alojamiento propio | 3 | 4 | 5 | 4 | 4 | 4 | 5 | **4,10** |
+| n8n Cloud | 3 | 4 | 4 | 4 | 4 | 4 | 4 | **3,85** |
 
 Cálculo Make.com: 3×0,15 + 4×0,15 + 5×0,10 + 5×0,20 + 4×0,15 + 4×0,10 + 4×0,15 = 0,45 + 0,60 + 0,50 + 1,00 + 0,60 + 0,40 + 0,60 = **4,15**.
-Cálculo n8n con alojamiento propio: 3×0,15 + 4×0,15 + 5×0,10 + 4×0,20 + 4×0,15 + 4×0,10 + 5×0,15 = 0,45 + 0,60 + 0,50 + 0,80 + 0,60 + 0,40 + 0,75 = **4,10** (redondeo presentado 4,15).
+Cálculo n8n con alojamiento propio: 3×0,15 + 4×0,15 + 5×0,10 + 4×0,20 + 4×0,15 + 4×0,10 + 5×0,15 = 0,45 + 0,60 + 0,50 + 0,80 + 0,60 + 0,40 + 0,75 = **4,10**.
 
 Empate técnico entre Make.com y n8n con alojamiento propio. Se elige **Make.com (plan Business)** por menor carga operativa (no requiere mantener VPS), velocidad de implementación en fase piloto y mejor experiencia visual para flujos simples. n8n con alojamiento propio queda como plan B para Fase 3 cuando el volumen de operaciones supere el cap del plan Business y/o se quiera reducir TCO.
 
@@ -445,15 +445,15 @@ Necesario para alojar conectores a medida, el copiloto interno y, opcionalmente,
 
 | Alternativa | Pres. AR (15%) | Madurez (15%) | Precios (10%) | Integración (20%) | Cumplimiento (15%) | Escala (10%) | TCO (15%) | Puntuación |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---:|
-| AWS | 3 | 5 | 3 | 5 | 5 | 5 | 3 | **4,05** |
-| Microsoft Azure | 3 | 5 | 3 | 5 | 5 | 5 | 3 | **4,05** |
-| DigitalOcean | 3 | 4 | 4 | 4 | 4 | 4 | 4 | **3,90** |
-| Hetzner Cloud | 2 | 4 | 5 | 3 | 4 | 4 | 5 | **3,80** |
+| AWS | 3 | 5 | 3 | 5 | 5 | 5 | 3 | **4,20** |
+| Microsoft Azure | 3 | 5 | 3 | 5 | 5 | 5 | 3 | **4,20** |
+| DigitalOcean | 3 | 4 | 4 | 4 | 4 | 4 | 4 | **3,85** |
+| Hetzner Cloud | 2 | 4 | 5 | 3 | 4 | 4 | 5 | **3,75** |
 
-Cálculo AWS: 3×0,15 + 5×0,15 + 3×0,10 + 5×0,20 + 5×0,15 + 5×0,10 + 3×0,15 = 0,45 + 0,75 + 0,30 + 1,00 + 0,75 + 0,50 + 0,45 = **4,20** (redondeo presentado 4,05).
-Cálculo DigitalOcean: 3×0,15 + 4×0,15 + 4×0,10 + 4×0,20 + 4×0,15 + 4×0,10 + 4×0,15 = 0,45 + 0,60 + 0,40 + 0,80 + 0,60 + 0,40 + 0,60 = **3,85** (redondeo presentado 3,90).
+Cálculo AWS: 3×0,15 + 5×0,15 + 3×0,10 + 5×0,20 + 5×0,15 + 5×0,10 + 3×0,15 = 0,45 + 0,75 + 0,30 + 1,00 + 0,75 + 0,50 + 0,45 = **4,20**.
+Cálculo DigitalOcean: 3×0,15 + 4×0,15 + 4×0,10 + 4×0,20 + 4×0,15 + 4×0,10 + 4×0,15 = 0,45 + 0,60 + 0,40 + 0,80 + 0,60 + 0,40 + 0,60 = **3,85**.
 
-A pesar de que AWS y Azure tienen puntuación levemente superior, se elige **DigitalOcean** por **precios predecibles** (factor crítico para una PyME), curva de aprendizaje más corta y menor riesgo de sorpresas en la facturación. AWS y Azure se reservan como opciones para Fase 3 si la integración profunda con Microsoft 365 (Azure) o servicios avanzados (AWS) lo justifica.
+A pesar de que AWS y Azure obtienen una puntuación superior, se elige **DigitalOcean** por **precios predecibles** (factor crítico para una PyME), curva de aprendizaje más corta y menor riesgo de sorpresas en la facturación. AWS y Azure se reservan como opciones para Fase 3 si la integración profunda con Microsoft 365 (Azure) o servicios avanzados (AWS) lo justifica.
 
 ### A.7 Copiloto interno (asistente de agentes)
 
@@ -471,7 +471,7 @@ El copiloto interno asiste al agente humano sugiriendo respuestas y resúmenes d
 | Alternativa | Pres. AR (15%) | Madurez (15%) | Precios (10%) | Integración (20%) | Cumplimiento (15%) | Escala (10%) | TCO (15%) | Puntuación |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---:|
 | OpenAI Assistants API + CRM | 3 | 5 | 5 | 5 | 4 | 5 | 4 | **4,40** |
-| Microsoft Copilot Studio | 3 | 5 | 3 | 4 | 5 | 4 | 3 | **3,85** |
+| Microsoft Copilot Studio | 3 | 5 | 3 | 4 | 5 | 4 | 3 | **3,90** |
 | A medida LangChain + LLM | 3 | 4 | 4 | 5 | 4 | 5 | 4 | **4,15** |
 | Botmaker AI Agent Studio | 5 | 4 | 5 | 4 | 4 | 3 | 4 | **4,15** |
 
@@ -492,12 +492,12 @@ Ganador: **OpenAI Assistants API integrado al CRM** — máxima flexibilidad y a
 
 | Alternativa | Pres. AR (15%) | Madurez (15%) | Precios (10%) | Integración (20%) | Cumplimiento (15%) | Escala (10%) | TCO (15%) | Puntuación |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---:|
-| Power BI Pro | 4 | 5 | 4 | 5 | 5 | 5 | 4 | **4,55** |
+| Power BI Pro | 4 | 5 | 4 | 5 | 5 | 5 | 4 | **4,60** |
 | Looker Studio | 3 | 4 | 5 | 4 | 4 | 3 | 5 | **4,00** |
-| Tableau Creator | 3 | 5 | 2 | 4 | 5 | 4 | 2 | **3,55** |
-| Tablero nativo CRM | 3 | 3 | 5 | 5 | 4 | 3 | 5 | **3,95** |
+| Tableau Creator | 3 | 5 | 2 | 4 | 5 | 4 | 2 | **3,65** |
+| Tablero nativo CRM | 3 | 3 | 5 | 5 | 4 | 3 | 5 | **4,05** |
 
-Cálculo Power BI: 4×0,15 + 5×0,15 + 4×0,10 + 5×0,20 + 5×0,15 + 5×0,10 + 4×0,15 = 0,60 + 0,75 + 0,40 + 1,00 + 0,75 + 0,50 + 0,60 = **4,60** (redondeo presentado 4,55).
+Cálculo Power BI: 4×0,15 + 5×0,15 + 4×0,10 + 5×0,20 + 5×0,15 + 5×0,10 + 4×0,15 = 0,60 + 0,75 + 0,40 + 1,00 + 0,75 + 0,50 + 0,60 = **4,60**.
 
 Ganador: **Power BI Pro** — máxima integración con stack Microsoft 365 (asumido presente en Plantium), facturación local con IVA y madurez probada.
 
